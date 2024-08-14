@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GravityCrypto.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b53555c0e172b92071068e4a7402f6dc331320c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02d54b69fa7fd919f6b5a4c7a8f0f2159ebfb071")]
 [assembly: System.Reflection.AssemblyProductAttribute("GravityCrypto.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GravityCrypto.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

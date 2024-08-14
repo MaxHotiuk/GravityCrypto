@@ -210,15 +210,20 @@ public class Functions
     }
 
     /// <summary>
-    /// Updates the history of string expressions by moving the current expression to the top of the history.
+    /// Updates the history of string expressions by adding the current expression to the top of the history,
+    /// only if it's different from the most recent entry.
     /// </summary>
     public void UpdateHistory()
     {
-        for (int i = string_expression_history.Length - 1; i > 0; i--)
+        // Check if the current expression is different from the most recent history entry
+        if (string_expression != string_expression_history[0])
         {
-            string_expression_history[i] = string_expression_history[i - 1];
+            for (int i = string_expression_history.Length - 1; i > 0; i--)
+            {
+                string_expression_history[i] = string_expression_history[i - 1];
+            }
+            string_expression_history[0] = string_expression;
         }
-        string_expression_history[0] = string_expression;
     }
 
     /// <summary>
@@ -226,20 +231,28 @@ public class Functions
     /// </summary>
     public void Revert()
     {
-        string_expression = string_expression_history[0];
-        for (int i = 0; i < string_expression_history.Length - 1; i++)
+        // Check if there's a previous expression to revert to
+        if (string_expression_history[1] != null)
         {
-            string_expression_history[i] = string_expression_history[i + 1];
+            string_expression = string_expression_history[1];
+            for (int i = 1; i < string_expression_history.Length - 1; i++)
+            {
+                string_expression_history[i] = string_expression_history[i + 1];
+            }
+            string_expression_history[string_expression_history.Length - 1] = null!;
+            Console.WriteLine(string_expression);
         }
-        string_expression_history[string_expression_history.Length - 1] = null!;
-        Console.WriteLine(string_expression);
+        else
+        {
+            Console.WriteLine("No previous expression to revert to.");
+        }
     }
 
     /// <summary>
     /// Converts a string of numbers separated by dashes into corresponding letters.
     /// </summary>
     /// <param name="expression">The string expression containing numbers.</param>
-    public void ConvertA1Z26(string expression)
+    public string ConvertA1Z26(string expression)
     {
         StringBuilder result = new StringBuilder();
         string[] words = expression.Split(' ');
@@ -268,6 +281,7 @@ public class Functions
         }
         Console.WriteLine(result);
         NewExpression(result.ToString());
+        return result.ToString();
     }
 
     /// <summary>

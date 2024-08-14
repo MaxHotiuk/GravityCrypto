@@ -1,7 +1,7 @@
 {
   "entryAssembly": "GravityCrypto.Client",
   "resources": {
-    "hash": "sha256-jh8t3TyS5/2ZDQXPacmMSzYUwHFoYzTbxcZ+dqNViOQ=",
+    "hash": "sha256-PzZnQ12u08dxFxMwjtp3jxYeJKs4zlbA4GNHVVFs5Vc=",
     "runtime": {
       "dotnet.6.0.31.1jx0c6bp8n.js": "sha256-k3r5KPTTMlxe9KmBUGXolEPkii6jv/+oC1SOmed3LVc=",
       "dotnet.timezones.blat": "sha256-noxiDysKmbcNb8gHnNG6cYvM6Ies6JlarpF1lK0YTtY=",
@@ -200,12 +200,12 @@
       "mscorlib.dll": "sha256-er6cLjOyu1s02HPaReJi0KkBwOSQyQ0/T8lVwYrQmwE=",
       "netstandard.dll": "sha256-UjAkjmlOWOKd1d6UaAYFH6rO8pqwuoCKrs8+TW10Xvk=",
       "System.Private.CoreLib.dll": "sha256-uAJxx8FtA3E57cEa87ZsxFWqQmHkAYyH5WNbmii0koQ=",
-      "GravityCrypto.Shared.dll": "sha256-KDPxR33LWZhKTFMaq4H0k6AbL+VtQ2xkkDgLkCBKHNo=",
-      "GravityCrypto.Client.dll": "sha256-gaw5Ejde6NQ4vPGs3yEGH3tiLl0i/pnLq5Yu89oT74k="
+      "GravityCrypto.Shared.dll": "sha256-NOE042c0vSJcUAN1uYfGKeOcXf2jPlDb0t/AXosvt5g=",
+      "GravityCrypto.Client.dll": "sha256-78GeAZiqkD7XA3GfvAD0p4deS42yhdFBzTS3/ppv3fU="
     },
     "pdb": {
-      "GravityCrypto.Shared.pdb": "sha256-AZMBsG/JiYpD1VkEVWdFKH3ZMNfjuMXaBvgEP7r4DHo=",
-      "GravityCrypto.Client.pdb": "sha256-mQKbIuKDB5Pt2v63WRfMZ2kLCtlD6In5XPuZuAkPIOI="
+      "GravityCrypto.Shared.pdb": "sha256-ANnMOriaB4UljYGi9U89NzkBAh7/6ukeMdK35kVvedI=",
+      "GravityCrypto.Client.pdb": "sha256-fR2uTbfT/m5eD8VyMpZFOQZ8JZf09RN3n8OBJJ1jd9w="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

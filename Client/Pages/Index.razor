@@ -13,57 +13,62 @@
 </div>
 
 <div>
-    <h4>Decoded Binary String</h4>
+    <h4>Decode A1Z26</h4>
+    <button @onclick="HandleA1Z26Encoding">Decode A1Z26</button>
+</div>
+
+<div>
+    <h4>Decode Binary String</h4>
     <input @bind="binaryLength" type="number" placeholder="Enter binary byte length" />
     <button @onclick="HandleBinaryDecoding">Decode Binary</button>
-    <p>@decodedBinaryString</p>
+</div>
+
+<div>
+    <h4>Decode Ceasar</h4>
+    <input @bind="ceasarShift" type="number" placeholder="Enter shift">
+    <button @onclick="HandleCeasarDecoding">Decode Ceasar</button>
 </div>
 
 <div>
     <h4>Decode Polybius</h4>
     <input @bind="polybiusSquare" placeholder="Enter Polybius square (leave empty for default)" />
     <button @onclick="HandlePolybiusDecoding">Decode Polybius</button>
-    <p>@decodedPolybiusString</p>
 </div>
 
 <div>
     <h4>Shift By First Letter</h4>
     <input @bind="firstLetter" placeholder="Enter first letter" />
     <button @onclick="ShiftByFirstLetter">Shift</button>
-    <p>@shiftedString</p>
 </div>
 
 <div>
     <h4>Reverse Alphabet</h4>
     <button @onclick="ReverseAlphabet">Reverse Alphabet</button>
-    <p>@reversedAlphabetString</p>
 </div>
 
 <div>
     <h4>Vigenère Cipher</h4>
     <input @bind="vigenereKey" placeholder="Enter key" />
     <button @onclick="ApplyVigenereCipher">Apply Vigenère Cipher</button>
-    <p>@vigenereString</p>
 </div>
 
 <div>
     <h4>Combined Operations</h4>
     <button @onclick="ApplyCombinedOperations">Apply Combined Operations</button>
-    <p>@combinedString</p>
+</div>
+
+<div>
+    <h4>Undo</h4>
+    <button @onclick="UndoHelper">Undo</button>
 </div>
 @code {
     private string inputString = "";
     private string statusExpression = "";
     private int binaryLength = 8;
-    private string decodedBinaryString = "";
     private string polybiusSquare = "";
-    private string decodedPolybiusString = "";
     private string firstLetter = "";
-    private string shiftedString = "";
-    private string reversedAlphabetString = "";
     private string vigenereKey = "";
-    private string vigenereString = "";
-    private string combinedString = "";
+    private string ceasarShift = "";
     private Functions functions;
     public Index()
     {
@@ -77,22 +82,41 @@
         statusExpression = functions.StringExpression;
     }
 
+    private void UndoHelper()
+    {
+        functions.Revert();
+        statusExpression = functions.StringExpression;
+    }
+
     private void HandleBinaryDecoding()
     {
         try
         {
-            decodedBinaryString = functions.DecodeBinaryString(inputString, binaryLength);
+            statusExpression = functions.DecodeBinaryString(inputString, binaryLength);
         }
         catch (Exception ex)
         {
-            decodedBinaryString = $"Error: {ex.Message}";
+            statusExpression = $"Error: {ex.Message}";
+        }
+    }
+
+    private void HandleCeasarDecoding()
+    {
+        try
+        {
+            functions.Shift(int.Parse(ceasarShift));
+            statusExpression = functions.StringExpression;
+        }
+        catch (Exception ex)
+        {
+            statusExpression = $"Error: {ex.Message}";
         }
     }
 
     private void HandlePolybiusDecoding()
     {
         functions.DecodePolybiusInputHelper();
-        decodedPolybiusString = functions.StringExpression;
+        statusExpression = functions.StringExpression;
     }
 
     private void ShiftByFirstLetter()
@@ -102,30 +126,42 @@
             try
             {
                 functions.ShiftByFirstLetter();
-                shiftedString = functions.StringExpression;
+                statusExpression = functions.StringExpression;
             }
             catch (Exception ex)
             {
-                shiftedString = $"Error: {ex.Message}";
+                statusExpression = $"Error: {ex.Message}";
             }
+        }
+    }
+
+    private void HandleA1Z26Encoding()
+    {
+        try
+        {
+            statusExpression = functions.ConvertA1Z26(functions.StringExpression);
+        }
+        catch (Exception ex)
+        {
+            statusExpression = $"Error: {ex.Message}";
         }
     }
 
     private void ReverseAlphabet()
     {
         functions.ReverseAlphabet();
-        reversedAlphabetString = functions.StringExpression;
+        statusExpression = functions.StringExpression;
     }
 
     private void ApplyVigenereCipher()
     {
         functions.Vigenère(vigenereKey);
-        vigenereString = functions.StringExpression;
+        statusExpression = functions.StringExpression;
     }
 
     private void ApplyCombinedOperations()
     {
         functions.Combined();
-        combinedString = functions.StringExpression;
+        statusExpression = functions.StringExpression;
     }
 }
