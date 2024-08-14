@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maxhotiuk/Desktop/GravityCrypto/Api/Api.csproj": {}
+    "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Shared/GravityCrypto.Shared.csproj": {}
   },
   "projects": {
-    "/Users/maxhotiuk/Desktop/GravityCrypto/Api/Api.csproj": {
+    "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Shared/GravityCrypto.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maxhotiuk/Desktop/GravityCrypto/Api/Api.csproj",
-        "projectName": "Api",
-        "projectPath": "/Users/maxhotiuk/Desktop/GravityCrypto/Api/Api.csproj",
+        "projectUniqueName": "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Shared/GravityCrypto.Shared.csproj",
+        "projectName": "GravityCrypto.Shared",
+        "projectPath": "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Shared/GravityCrypto.Shared.csproj",
         "packagesPath": "/Users/maxhotiuk/.nuget/packages/",
-        "outputPath": "/Users/maxhotiuk/Desktop/GravityCrypto/Api/obj/",
+        "outputPath": "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/maxhotiuk/.nuget/NuGet/NuGet.Config"
@@ -43,12 +43,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -66,18 +60,11 @@
               "version": "[6.0.31, 6.0.31]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[6.0.31, 6.0.31]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[6.0.31, 6.0.31]"
             }
           ],
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

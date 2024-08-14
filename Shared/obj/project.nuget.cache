@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "yFB30jR/sHc=",
+  "dgSpecHash": "1Q+YWFx74lo=",
   "success": true,
-  "projectFilePath": "/Users/maxhotiuk/Desktop/GravityCrypto/Shared/Shared.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Shared/GravityCrypto.Shared.csproj",
+  "expectedPackageFiles": [
+    "/Users/maxhotiuk/.nuget/packages/microsoft.netcore.app.ref/6.0.31/microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "/Users/maxhotiuk/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512"
+  ],
   "logs": []
 }
