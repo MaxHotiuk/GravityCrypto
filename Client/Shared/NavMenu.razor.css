@@ -1,14 +1,16 @@
 .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 165, 0, 0.3); /* Orange with transparency */
 }
 
 .top-row {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #4B3621; /* Dark brown */
 }
 
 .navbar-brand {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-family: 'Creepster', cursive; /* Use a quirky font */
+    color: #FFD700; /* Gold */
 }
 
 .oi {
@@ -16,47 +18,73 @@
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
+    color: #FFD700; /* Gold */
 }
 
 .nav-item {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding-bottom: 0.5rem;
+    font-family: 'Arial', sans-serif;
 }
 
-    .nav-item:first-of-type {
-        padding-top: 1rem;
-    }
+.nav-item:first-of-type {
+    padding-top: 1rem;
+}
 
-    .nav-item:last-of-type {
-        padding-bottom: 1rem;
-    }
+.nav-item:last-of-type {
+    padding-bottom: 1rem;
+}
 
-    .nav-item ::deep a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
+.nav-item ::deep a {
+    color: #FFD700; /* Gold */
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+    transition: all 0.3s ease;
+}
 
 .nav-item ::deep a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
+    background-color: #d9bda5; /* Orange with transparency */
+    color: #4B3621; /* Dark brown */
 }
 
 .nav-item ::deep a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
+    background-color: rgba(255, 165, 0, 0.3); /* Orange with transparency */
+    color: #4B3621; /* Dark brown */
+    transform: scale(1.05);
 }
 
 @media (min-width: 641px) {
     .navbar-toggler {
         display: none;
     }
-
     .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
+}
+
+/* Additional Gravity Falls themed styles */
+body {
+    background-color: #2C1B0E; /* Very dark brown */
+}
+
+.sidebar {
+    background-image: url('path-to-your-pine-tree-pattern.png'); /* Add a pine tree pattern background */
+    background-repeat: repeat;
+    box-shadow: inset -5px 0 15px rgba(0,0,0,0.4);
+}
+
+/* Add a mystical glow effect to nav items on hover */
+.nav-item ::deep a:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255,215,0,0.4) 0%, rgba(255,215,0,0) 70%);
+    pointer-events: none;
 }

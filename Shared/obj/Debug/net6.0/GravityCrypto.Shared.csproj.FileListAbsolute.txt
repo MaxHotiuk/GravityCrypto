@@ -1,0 +1,12 @@
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/bin/Debug/net6.0/GravityCrypto.Shared.deps.json
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/bin/Debug/net6.0/GravityCrypto.Shared.dll
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/bin/Debug/net6.0/GravityCrypto.Shared.pdb
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/obj/Debug/net6.0/GravityCrypto.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/obj/Debug/net6.0/GravityCrypto.Shared.AssemblyInfoInputs.cache
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/obj/Debug/net6.0/GravityCrypto.Shared.AssemblyInfo.cs
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/obj/Debug/net6.0/GravityCrypto.Shared.csproj.CoreCompileInputs.cache
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/obj/Debug/net6.0/GravityCrypto.Shared.sourcelink.json
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/obj/Debug/net6.0/GravityCrypto.Shared.dll
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/obj/Debug/net6.0/refint/GravityCrypto.Shared.dll
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/obj/Debug/net6.0/GravityCrypto.Shared.pdb
+/Users/maxhotiuk/Desktop/GravityCrypto/Shared/obj/Debug/net6.0/ref/GravityCrypto.Shared.dll

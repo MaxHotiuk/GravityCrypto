@@ -1951,11 +1951,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Client/GravityCrypto.Client.csproj",
+      "projectUniqueName": "/Users/maxhotiuk/Desktop/GravityCrypto/Client/GravityCrypto.Client.csproj",
       "projectName": "GravityCrypto.Client",
-      "projectPath": "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Client/GravityCrypto.Client.csproj",
+      "projectPath": "/Users/maxhotiuk/Desktop/GravityCrypto/Client/GravityCrypto.Client.csproj",
       "packagesPath": "/Users/maxhotiuk/.nuget/packages/",
-      "outputPath": "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Client/obj/",
+      "outputPath": "/Users/maxhotiuk/Desktop/GravityCrypto/Client/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/maxhotiuk/.nuget/NuGet/NuGet.Config"
@@ -1971,8 +1971,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Shared/GravityCrypto.Shared.csproj": {
-              "projectPath": "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Shared/GravityCrypto.Shared.csproj"
+            "/Users/maxhotiuk/Desktop/GravityCrypto/Shared/GravityCrypto.Shared.csproj": {
+              "projectPath": "/Users/maxhotiuk/Desktop/GravityCrypto/Shared/GravityCrypto.Shared.csproj"
             }
           }
         }

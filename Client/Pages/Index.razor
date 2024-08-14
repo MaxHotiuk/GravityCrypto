@@ -1,9 +1,131 @@
 ﻿@page "/"
+@using GravityCrypto.Client.Functions
+@using System.Text
+@inject IJSRuntime JS
 
-<PageTitle>Index</PageTitle>
+<h3>Functions Page</h3>
 
-<h1>Hello, world!</h1>
+<div>
+    <h4>Input String</h4>
+    <input @bind="inputString" placeholder="Enter string here" />
+    <button @onclick="UpdateExpression">Update Expression</button>
+    <p>Current string:@statusExpression</p>
+</div>
 
-Welcome to your new app.
+<div>
+    <h4>Decoded Binary String</h4>
+    <input @bind="binaryLength" type="number" placeholder="Enter binary byte length" />
+    <button @onclick="HandleBinaryDecoding">Decode Binary</button>
+    <p>@decodedBinaryString</p>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<div>
+    <h4>Decode Polybius</h4>
+    <input @bind="polybiusSquare" placeholder="Enter Polybius square (leave empty for default)" />
+    <button @onclick="HandlePolybiusDecoding">Decode Polybius</button>
+    <p>@decodedPolybiusString</p>
+</div>
+
+<div>
+    <h4>Shift By First Letter</h4>
+    <input @bind="firstLetter" placeholder="Enter first letter" />
+    <button @onclick="ShiftByFirstLetter">Shift</button>
+    <p>@shiftedString</p>
+</div>
+
+<div>
+    <h4>Reverse Alphabet</h4>
+    <button @onclick="ReverseAlphabet">Reverse Alphabet</button>
+    <p>@reversedAlphabetString</p>
+</div>
+
+<div>
+    <h4>Vigenère Cipher</h4>
+    <input @bind="vigenereKey" placeholder="Enter key" />
+    <button @onclick="ApplyVigenereCipher">Apply Vigenère Cipher</button>
+    <p>@vigenereString</p>
+</div>
+
+<div>
+    <h4>Combined Operations</h4>
+    <button @onclick="ApplyCombinedOperations">Apply Combined Operations</button>
+    <p>@combinedString</p>
+</div>
+@code {
+    private string inputString = "";
+    private string statusExpression = "";
+    private int binaryLength = 8;
+    private string decodedBinaryString = "";
+    private string polybiusSquare = "";
+    private string decodedPolybiusString = "";
+    private string firstLetter = "";
+    private string shiftedString = "";
+    private string reversedAlphabetString = "";
+    private string vigenereKey = "";
+    private string vigenereString = "";
+    private string combinedString = "";
+    private Functions functions;
+    public Index()
+    {
+        functions = new Functions(inputString);
+    }
+
+    private void UpdateExpression()
+    {
+        functions.NewExpression(inputString);
+        inputString = "";
+        statusExpression = functions.StringExpression;
+    }
+
+    private void HandleBinaryDecoding()
+    {
+        try
+        {
+            decodedBinaryString = functions.DecodeBinaryString(inputString, binaryLength);
+        }
+        catch (Exception ex)
+        {
+            decodedBinaryString = $"Error: {ex.Message}";
+        }
+    }
+
+    private void HandlePolybiusDecoding()
+    {
+        functions.DecodePolybiusInputHelper();
+        decodedPolybiusString = functions.StringExpression;
+    }
+
+    private void ShiftByFirstLetter()
+    {
+        if (!string.IsNullOrEmpty(firstLetter))
+        {
+            try
+            {
+                functions.ShiftByFirstLetter();
+                shiftedString = functions.StringExpression;
+            }
+            catch (Exception ex)
+            {
+                shiftedString = $"Error: {ex.Message}";
+            }
+        }
+    }
+
+    private void ReverseAlphabet()
+    {
+        functions.ReverseAlphabet();
+        reversedAlphabetString = functions.StringExpression;
+    }
+
+    private void ApplyVigenereCipher()
+    {
+        functions.Vigenère(vigenereKey);
+        vigenereString = functions.StringExpression;
+    }
+
+    private void ApplyCombinedOperations()
+    {
+        functions.Combined();
+        combinedString = functions.StringExpression;
+    }
+}

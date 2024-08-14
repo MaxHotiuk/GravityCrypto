@@ -1,0 +1,90 @@
+.navbar-toggler[b-jhiqccv1on] {
+    background-color: rgba(255, 165, 0, 0.3); /* Orange with transparency */
+}
+
+.top-row[b-jhiqccv1on] {
+    height: 3.5rem;
+    background-color: #4B3621; /* Dark brown */
+}
+
+.navbar-brand[b-jhiqccv1on] {
+    font-size: 1.3rem;
+    font-family: 'Creepster', cursive; /* Use a quirky font */
+    color: #FFD700; /* Gold */
+}
+
+.oi[b-jhiqccv1on] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+    color: #FFD700; /* Gold */
+}
+
+.nav-item[b-jhiqccv1on] {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-item:first-of-type[b-jhiqccv1on] {
+    padding-top: 1rem;
+}
+
+.nav-item:last-of-type[b-jhiqccv1on] {
+    padding-bottom: 1rem;
+}
+
+.nav-item[b-jhiqccv1on]  a {
+    color: #FFD700; /* Gold */
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+    transition: all 0.3s ease;
+}
+
+.nav-item[b-jhiqccv1on]  a.active {
+    background-color: #d9bda5; /* Orange with transparency */
+    color: #4B3621; /* Dark brown */
+}
+
+.nav-item[b-jhiqccv1on]  a:hover {
+    background-color: rgba(255, 165, 0, 0.3); /* Orange with transparency */
+    color: #4B3621; /* Dark brown */
+    transform: scale(1.05);
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-jhiqccv1on] {
+        display: none;
+    }
+    .collapse[b-jhiqccv1on] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
+
+/* Additional Gravity Falls themed styles */
+body[b-jhiqccv1on] {
+    background-color: #2C1B0E; /* Very dark brown */
+}
+
+.sidebar[b-jhiqccv1on] {
+    background-image: url('path-to-your-pine-tree-pattern.png'); /* Add a pine tree pattern background */
+    background-repeat: repeat;
+    box-shadow: inset -5px 0 15px rgba(0,0,0,0.4);
+}
+
+/* Add a mystical glow effect to nav items on hover */
+.nav-item[b-jhiqccv1on]  a:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255,215,0,0.4) 0%, rgba(255,215,0,0) 70%);
+    pointer-events: none;
+}

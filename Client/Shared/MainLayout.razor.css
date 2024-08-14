@@ -6,45 +6,50 @@
 
 main {
     flex: 1;
+    background-color: #f6eee3; /* Khaki, for a parchment-like effect */
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-color: #e5cbba; /* R with Mystery Shack image */
+    background-size: cover;
+    background-position: center;
 }
 
 .top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
+    background-color: #4B3621; /* SaddleBrown, for a wooden effect */
+    border-bottom: 2px solid #A0522D; /* Sienna, darker wood grain */
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;
     align-items: center;
 }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
+.top-row ::deep a, .top-row ::deep .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #FFD700; /* Gold */
+    font-family: 'Creepster', cursive; /* Use a quirky font */
+}
 
-    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
-        text-decoration: underline;
-    }
+.top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
+    text-decoration: underline;
+    color: #d9bda5; /* Orange */
+    text-shadow: 0 0 5px #FFD700; /* Gold glow effect */
+}
 
-    .top-row ::deep a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.top-row ::deep a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 @media (max-width: 640.98px) {
     .top-row:not(.auth) {
         display: none;
     }
-
     .top-row.auth {
         justify-content: space-between;
     }
-
     .top-row ::deep a, .top-row ::deep .btn-link {
         margin-left: 0;
     }
@@ -54,28 +59,50 @@ main {
     .page {
         flex-direction: row;
     }
-
     .sidebar {
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
-
     .top-row {
         position: sticky;
         top: 0;
         z-index: 1;
     }
-
     .top-row.auth ::deep a:first-child {
         flex: 1;
         text-align: right;
         width: 0;
     }
-
     .top-row, article {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
+}
+
+/* Additional Gravity Falls themed styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #4B3621; /* Dark brown for text */
+}
+
+article {
+    background-image: url('path-to-your-journal-page-texture.jpg'); /* Replace with journal page texture */
+    background-repeat: repeat;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Add a mystical symbol to the corner of each article */
+article::after {
+    content: '⍙';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #FFD700; /* Gold */
+    opacity: 0.5;
 }

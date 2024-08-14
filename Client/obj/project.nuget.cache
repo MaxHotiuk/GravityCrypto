@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bWRr2ARWmKY=",
+  "dgSpecHash": "LSnGJ0LBYpM=",
   "success": true,
-  "projectFilePath": "/Users/maxhotiuk/Desktop/GravityCrypto/GravityCrypto/Client/GravityCrypto.Client.csproj",
+  "projectFilePath": "/Users/maxhotiuk/Desktop/GravityCrypto/Client/GravityCrypto.Client.csproj",
   "expectedPackageFiles": [
     "/Users/maxhotiuk/.nuget/packages/microsoft.aspnetcore.authorization/6.0.9/microsoft.aspnetcore.authorization.6.0.9.nupkg.sha512",
     "/Users/maxhotiuk/.nuget/packages/microsoft.aspnetcore.components/6.0.9/microsoft.aspnetcore.components.6.0.9.nupkg.sha512",

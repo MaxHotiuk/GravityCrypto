@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GravityCrypto", "GravityCrypto\GravityCrypto.csproj", "{77CABFBE-9069-4433-8E66-C6F2DEB48D28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GravityCrypto.Client", "GravityCrypto.Client\GravityCrypto.Client.csproj", "{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Debug|x64.Build.0 = Debug|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Release|x64.ActiveCfg = Release|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Release|x64.Build.0 = Release|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED638DC2-5A55-4B6F-9FD5-B48D1613EA27}.Release|x86.Build.0 = Release|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Debug|x64.Build.0 = Debug|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Debug|x86.Build.0 = Debug|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Release|x64.ActiveCfg = Release|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Release|x64.Build.0 = Release|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Release|x86.ActiveCfg = Release|Any CPU
+		{77CABFBE-9069-4433-8E66-C6F2DEB48D28}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B77E45C-DFA7-467F-981A-5E8CE47B5556}
+	EndGlobalSection
+EndGlobal
